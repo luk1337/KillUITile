@@ -24,7 +24,7 @@ public class Tile {
 
         CustomTile mCustomTile = new CustomTile.Builder(mContext)
                 .setOnClickIntent(pendingIntent)
-                .setContentDescription("Generic content description")
+                .setContentDescription("Don't click the \"Remove Tile\" button below ;_;")
                 .setLabel("Kill UI")
                 .shouldCollapsePanel(false)
                 .setIcon(R.drawable.ic_launcher)
