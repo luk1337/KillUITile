@@ -18,7 +18,7 @@ public class TileReceiver extends BroadcastReceiver {
         Log.v(TAG, "onReceive");
 
         try {
-            Runtime.getRuntime().exec(new String[] { "su", "-c", "pkill -9 systemui" });
+            Runtime.getRuntime().exec(new String[] { "su", "-c", "pkill -9 systemui; exit" });
         } catch (IOException e) {
             Log.e(TAG, e.getMessage());
         }
