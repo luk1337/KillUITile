@@ -8,6 +8,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // publish my tile
+        new Tile(this).publish();
+
+        // kill this activity
         finish();
     }
 }
